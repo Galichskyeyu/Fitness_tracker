@@ -17,7 +17,7 @@ class InfoMessage:
                     'Потрачено ккал: {calories:.3f}.')
 
     def get_message(self) -> str:
-        """Метод возвращает строку сообщения"""
+        """Метод возвращает строку сообщения."""
         return self.message.format(**asdict(self))
 
 
@@ -47,7 +47,7 @@ class Training:
     def get_spent_calories(self) -> float:
         """Получить количество затраченных калорий."""
         raise NotImplementedError(f'"Метод не найден в классе '
-                                  f'- {self.__class__.__name__}"')
+                                  f'- {self.__class__.__name__}".')
 
     def show_training_info(self) -> InfoMessage:
         """Вернуть информационное сообщение о выполненной тренировке."""
